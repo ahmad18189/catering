@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'TheSansPlain';
+  src: url('/assets/catering/fonts/TheSans-Plain.eot');
+  src: url('/assets/catering/fonts/TheSans-Plain.eot?#iefix') format('embedded-opentype'),
+       url('/assets/catering/fonts/TheSans-Plain.woff2') format('woff2'),
+       url('/assets/catering/fonts/TheSans-Plain.woff') format('woff'),
+       url('/assets/catering/fonts/TheSans-Plain.ttf') format('truetype'),
+       url('/assets/catering/fonts/TheSans-Plain.svg#TheSans-Plain') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+body{
+    font-family: 'TheSansPlain', sans-serif !important;
+}

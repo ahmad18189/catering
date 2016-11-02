@@ -1,0 +1,59 @@
+.hero-widget{
+    text-align: center;
+    height: 150px;
+    background-color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+}
+.hero-widget:hover{
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow:    3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
+    box-shadow:         3px 3px 5px 6px #ccc;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+.hero-widget .title{
+    height: 95px;
+    line-height: 95px;
+    text-align: center;
+}
+
+.hero-widget .title i{
+    font-size: 85px;
+}
+
+.hero-widget .title h4{
+    font-size: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    color: #556175 !important;
+}
+
+
+@media (min-width:320px) {
+    .col-sm-3{
+        width: 100%;
+    }
+}
+@media (min-width:481px) { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
+@media (min-width:641px) {
+    .col-sm-3{
+        width: 50%;
+    }
+}
+@media (min-width:961px) {
+    .col-sm-3{
+        width: 33.333%;
+    }
+}
+@media (min-width:1025px) {
+
+}
+@media (min-width:1281px) {
+    .col-sm-3{
+        width: 25%;
+    }
+}
+
+.modal.in .modal-dialog{
+    z-index: 5000;
+}

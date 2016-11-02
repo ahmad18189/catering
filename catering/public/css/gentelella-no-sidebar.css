@@ -1,0 +1,23 @@
+body.no-sidebar{
+
+}
+
+body.no-sidebar .left_col, body.no-sidebar .nav.toggle{
+    display: none !important;
+}
+
+
+body.no-sidebar.main_container{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+
+body.no-sidebar .right_col, body.no-sidebar .top_nav, body.no-sidebar footer{
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+
