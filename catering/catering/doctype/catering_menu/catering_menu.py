@@ -49,6 +49,7 @@ class CateringMenu(Document):
 	def get_totals(self):
 		total_item = 0 
 		total_food =0
+		discount = self.discount if self.discount else 0
 		if self.get("menu_item"):
 			for value in self.get("menu_item"):
 				total_item += value.mi_total_price
@@ -56,6 +57,6 @@ class CateringMenu(Document):
 			for value in self.get("menu_food_item"):
 				total_food += value.total_price
 		
-		self.menu_total_cost = total_food+total_item-self.discount
+		self.total_cost = total_food+total_item-discount
 			
 

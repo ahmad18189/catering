@@ -7,8 +7,15 @@ def get_data():
 		{
 			"module_name": "Catering",
 			"color": "grey",
-			"icon": "octicon octicon-file-directory",
+			"icon": "octicon octicon-book",
 			"type": "module",
 			"label": _("Catering")
+		},
+		{
+			"module_name": "Kitchen",
+			"color": "grey",
+			"icon": "icon-food",
+			"type": "module",
+			"label": _("Kitchen")
 		}
 	]
