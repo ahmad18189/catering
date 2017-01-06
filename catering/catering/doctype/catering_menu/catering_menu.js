@@ -26,7 +26,6 @@ cur_frm.cscript.custom_food_type =
 	d.food_item ="";
 	d.unit_price ="";
 	d.total_price ="";
-	alert(d.food_item);
     cur_frm.refresh_fields(["menu_food_item"]);
     calc_all(doc);
 	cur_frm.set_query("food_item", "menu_food_item", function(doc, cdt, cdn) {

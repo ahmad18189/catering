@@ -6,6 +6,7 @@ from __future__ import unicode_literals
 import frappe
 from frappe.model.mapper import get_mapped_doc
 from frappe.model.document import Document
+from frappe.utils import flt
 
 class CustomerEventRequest(Document):
 	def get_catering_menu_data(self):
@@ -63,15 +64,18 @@ class CustomerEventRequest(Document):
 		discount = self.discount if self.discount else 0
 		if self.get("menu_item"):
 			for value in self.get("menu_item"):
-				total_item += value.mi_total_price
+				if value.mi_total_price:
+					total_item += value.mi_total_price
 		if self.get("menu_food_item"):
 			for value in self.get("menu_food_item"):
-				total_food += value.total_price
+				if value.total_price:
+					total_food += value.total_price
 		if self.get("service_personnel"):
 			for value in self.get("service_personnel"):
-				total_worker += value.total_price
+				if value.total_price:
+					total_worker += value.total_price
 		
-		self.total_cost = total_food+total_worker+total_item-discount
+		self.total_cost = flt(total_food)+flt(total_worker)+flt(total_item)-flt(discount)
 		
 		
 @frappe.whitelist()
