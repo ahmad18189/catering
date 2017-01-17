@@ -1,7 +1,7 @@
 {
  "allow_copy": 0, 
  "allow_import": 0, 
- "allow_rename": 0, 
+ "allow_rename": 1, 
  "autoname": "field:item_category", 
  "beta": 0, 
  "creation": "2017-01-03 13:43:57.594263", 
@@ -51,7 +51,7 @@
  "issingle": 0, 
  "istable": 0, 
  "max_attachments": 0, 
- "modified": "2017-01-06 17:43:30.265641", 
+ "modified": "2017-01-07 11:21:53.157713", 
  "modified_by": "Administrator", 
  "module": "Catering", 
  "name": "Item Category", 

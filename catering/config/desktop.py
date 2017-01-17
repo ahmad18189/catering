@@ -14,7 +14,7 @@ def get_data():
 		{
 			"module_name": "Kitchen",
 			"color": "grey",
-			"icon": "icon-food",
+			"icon": "octicon octicon-flame",
 			"type": "module",
 			"label": _("Kitchen")
 		}
